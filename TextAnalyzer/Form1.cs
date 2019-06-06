@@ -74,7 +74,7 @@ namespace TextAnalyzer
             for (int i = 2; i < FFArrayOfWords.Length; i++)
             {
                 string test_string = (FFArrayOfWords[i - 2] + " " + FFArrayOfWords[i - 1] + " " + FFArrayOfWords[i]);
-                int[] result = Algorithms.search(test_string, SFText);
+                int[] result = Algorithms.RabinKarp_Algorithm(test_string, SFText);
 
                 if (result.Length > 0)
                 {
